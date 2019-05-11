@@ -4,9 +4,8 @@ const initialState = []
 const reducer = (state = initialState, action = {}) => {
     switch (action.type) {
         case 'ADD_MODEL':
-        return  [...state, 
-          {...action.payload}
-        ]
+        return  action.payload
+        
         default:
           return state
         }
